@@ -208,34 +208,6 @@ The proposed framework was evaluated on two publicly available CT datasets.
 
 ---
 
-## Algorithmic Workflow
-
-### Training Phase
-
-1. Load training CT images and corresponding masks.
-2. Initialize MDA-SN using pretrained weights.
-3. Train the model using weighted cross-entropy loss.
-4. Optimize parameters using stochastic gradient descent.
-5. Save the trained model.
-
-### Testing Phase
-
-1. Load the testing CT slice.
-2. Apply adaptive data normalization.
-3. Predict lung and infection masks using trained MDA-SN.
-4. Compute segmentation metrics.
-5. Estimate infection ratio.
-
-### Retrieval Phase
-
-1. Use the predicted infection mask as the query.
-2. Compare the query mask with database masks.
-3. Compute Dice similarity scores.
-4. Rank database slices based on similarity.
-5. Retrieve top-N matched CT cases.
-
----
-
 ## Applications
 
 | Application | Description |
