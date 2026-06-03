@@ -1,5 +1,3 @@
-# MDA-SN
-
 <p align="center">
   <img src="figures/banner.png" width="100%" alt="MDA-SN Banner">
 </p>
