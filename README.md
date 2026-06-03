@@ -236,16 +236,6 @@ The proposed framework was evaluated on two publicly available CT datasets.
 
 ---
 
-## Code Availability
-
-The algorithmic framework and implementation details underlying the proposed method are publicly available at:
-
-https://github.com/Owais-CodeHub/MDA-SN
-
-This repository includes the methodological workflow, model design, adaptive data normalization strategy, infection ratio quantification procedure, and semantic retrieval framework used to generate the results reported in the study. There are no restrictions on access to these materials.
-
----
-
 ## Algorithmic Workflow
 
 The proposed MDA-SN framework consists of three main phases: training, testing, and retrieval.
