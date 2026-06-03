@@ -22,24 +22,36 @@ Meta-Domain Adaptive Framework for Efficient Diagnostic Assessment of Lung Infec
 
 ---
 
-## Overview
+## 🌟 Overview
 
-This repository provides the algorithmic framework and implementation details of **MDA-SN**, a lightweight **Meta-Domain Adoptive Segmentation Network** for automated lung infection analysis from CT images.
+**MDA-SN (Meta-Domain Adoptive Segmentation Network)** is a lightweight and computationally efficient AI framework developed for automated lung infection assessment from chest CT scans. The framework combines adaptive domain normalization, attention-driven segmentation, quantitative infection analysis, and semantic retrieval to provide an end-to-end computer-aided diagnostic solution.
 
-The proposed framework performs:
+### 🎯 Key Capabilities
 
-- Lung region segmentation
-- Infection region segmentation
-- Infection Ratio (IR) quantification
-- Semantic attention-driven retrieval of similar CT slices
-- Dice-based similarity matching
-- Cross-dataset diagnostic assessment
+| Capability | Description |
+|------------|-------------|
+| 🫁 Lung Segmentation | Automatic extraction of lung regions from CT scans |
+| 🔥 Infection Segmentation | Precise localization of infection regions |
+| 📊 Infection Ratio Quantification | Objective estimation of infection burden |
+| 🔍 Semantic Case Retrieval | Retrieval of clinically similar CT cases |
+| 📈 Disease Severity Assessment | Quantitative evaluation of infection progression |
+| 🌍 Cross-Dataset Generalization | Robust performance across diverse CT datasets |
 
-The framework is designed to support efficient, explainable, and reproducible computer-aided diagnostic assessment of lung infections from CT scans.
+### 🚀 Why MDA-SN?
 
----
+- Lightweight architecture with only **6.22M parameters**
+- Real-time processing at approximately **29 CT slices/second**
+- Adaptive Data Normalization (ADN) for improved cross-domain robustness
+- Multi-scale semantic learning using grouped and dilated convolutions
+- Semantic attention-driven retrieval framework for case-based analysis
+- Designed for explainable and reproducible medical AI research
 
-## Graphical Abstract
+### 🏥 Clinical Impact
+
+The proposed framework enables automated lung infection screening, infection severity quantification, and retrieval of clinically relevant CT cases, supporting radiologists and healthcare professionals in diagnostic assessment, treatment planning, and patient monitoring.
+
+
+### Graphical Abstract
 
 <p align="center">
   <img src="figures/graphical_abstract.png" width="95%" alt="Graphical Abstract">
