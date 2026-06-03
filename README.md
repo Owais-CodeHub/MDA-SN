@@ -224,43 +224,6 @@ The proposed framework was evaluated on two publicly available CT datasets.
 
 ---
 
-## Installation
-
-```bash
-git clone https://github.com/Owais-CodeHub/MDA-SN.git
-cd MDA-SN
-```
-
----
-
-## Usage
-
-### Train MDA-SN
-
-```matlab
-run training/train_mda_sn.m
-```
-
-### Test MDA-SN
-
-```matlab
-run testing/test_mda_sn.m
-```
-
-### Calculate Infection Ratio
-
-```matlab
-run retrieval/infection_ratio_calculation.m
-```
-
-### Retrieve Similar CT Cases
-
-```matlab
-run retrieval/dice_based_retrieval.m
-```
-
----
-
 ## Applications
 
 | Application | Description |
