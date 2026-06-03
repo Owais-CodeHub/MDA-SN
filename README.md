@@ -242,8 +242,101 @@ The algorithmic framework and implementation details underlying the proposed met
 
 https://github.com/Owais-CodeHub/MDA-SN
 
-This repository includes the methodological workflow, model design, infection ratio quantification procedure, and semantic retrieval framework used to generate the results reported in the study. There are no restrictions on access to these materials.
+This repository includes the methodological workflow, model design, adaptive data normalization strategy, infection ratio quantification procedure, and semantic retrieval framework used to generate the results reported in the study. There are no restrictions on access to these materials.
 
+---
+
+## Algorithmic Workflow
+
+The proposed MDA-SN framework consists of three main phases: training, testing, and retrieval.
+
+### Step 1: Training Phase
+
+```text
+Input:
+- Training CT images
+- Corresponding lung and infection masks
+
+Process:
+1. Load training CT scans and ground-truth masks.
+2. Initialize the MDA-SN model.
+3. Train one model for lung region segmentation.
+4. Train another model for infection region segmentation.
+5. Optimize the model using weighted segmentation loss.
+6. Save the trained MDA-SN models.
+
+Output:
+- Trained lung segmentation model
+- Trained infection segmentation model
+```
+
+### Step 2: Testing Phase
+
+```text
+Input:
+- Test CT scan
+- Trained MDA-SN models
+
+Process:
+1. Apply adaptive data normalization to reduce domain variation.
+2. Generate the lung segmentation mask.
+3. Generate the infection segmentation mask.
+4. Remove non-lung regions from the infection mask.
+5. Produce the final infection prediction map.
+
+Output:
+- Predicted lung mask
+- Predicted infection mask
+```
+
+### Step 3: Infection Ratio Quantification
+
+```text
+Input:
+- Predicted lung mask
+- Predicted infection mask
+
+Process:
+1. Count the total number of lung pixels.
+2. Count the total number of infected pixels.
+3. Calculate infection ratio using:
+
+   Infection Ratio = (Infected Area / Lung Area) × 100
+
+Output:
+- Infection Ratio percentage
+```
+
+### Step 4: Semantic Retrieval Phase
+
+```text
+Input:
+- Query infection mask
+- Database of CT masks
+
+Process:
+1. Compare the query mask with each database mask.
+2. Calculate Dice similarity score for each comparison.
+3. Rank all database CT slices based on Dice similarity.
+4. Select the Top-N most similar CT cases.
+5. Retrieve corresponding CT images and infection ratios.
+
+Output:
+- Top-N clinically similar CT cases
+- Dice similarity scores
+- Infection ratio values
+```
+
+### Step 5: Clinical Output
+
+```text
+Final Output:
+- Segmented lung region
+- Segmented infection region
+- Infection ratio score
+- Retrieved similar CT cases
+- Case-based support for diagnostic assessment
+```
 ---
 
 ## Paper Information
