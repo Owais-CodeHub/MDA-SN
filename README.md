@@ -183,7 +183,7 @@ The proposed framework was evaluated on two publicly available CT datasets.
 ## Visual Results
 
 <p align="center">
-  <img src="figures/sample_results.png" width="90%" alt="Segmentation Results">
+  <img src="figures/results.png" width="90%" alt="Segmentation Results">
 </p>
 
 ---
@@ -191,7 +191,7 @@ The proposed framework was evaluated on two publicly available CT datasets.
 ## Retrieval Results
 
 <p align="center">
-  <img src="figures/retrieval_results.png" width="90%" alt="Retrieval Results">
+  <img src="figures/retrieval.png" width="90%" alt="Retrieval Results">
 </p>
 
 ---
